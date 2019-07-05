@@ -1,0 +1,12 @@
+<% categories = [ 'japanese', 'indian', 'french' ] %>
+
+<h2>Find lots of restaurants</h2>
+<ul>
+<% counter = 0%>
+<% categories.each do |abc| %>
+ <% counter += 1%>
+ <% if counter < 4 %>
+  <li><%= abc.capitalize %></li>
+  <% end %>
+<% end %>
+</ul>
